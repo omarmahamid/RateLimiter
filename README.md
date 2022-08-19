@@ -101,4 +101,16 @@ Illustartion diagram:
 
 ![image](https://user-images.githubusercontent.com/59146036/185658617-fb3aa5a9-e9bc-4a14-ae18-2f8d2682b700.png)
 
+# 4.Sliding window log algorithm
+
+algorithm:
+* the algorithm keeps track of request timestamps. Timestamp data is usually kept in cache, such as sorted sets of Redis.
+* When a request comes, remove all the outdated timestamps.(those older than the start of the current time window).
+* if the log siz is the same or less than the allowed count, a request is accepted, otherwise it is rejected.
+
+
+Illustartion diagram:
+
+
+
 
