@@ -71,7 +71,7 @@ algorithm:
 * when a request arrived the system checks if the queue is full. if it's full then dropp the request, else add them to the queue.
 * Requests are pulled from the queue and processed at regular intervals
 
-Illustrating diagrams:
+Illustrating diagram:
 
 ![image](https://user-images.githubusercontent.com/59146036/185653233-93e66418-22bc-49fa-ae3b-c0a2afdc3562.png)
 
@@ -92,6 +92,12 @@ pros and cons:
 # 3.Fixed window counter algorithm
 
 algorithm:
-* 
+
+* the algorithm divide the timeline into fix-sized time wondows, and assign a counter for each window
+* each request increments the counter by one
+* once the counter reaches the pre-defined threshold, new requests are dropped until a new time window starts.
+
+Illustartion diagram:
+
 
 
