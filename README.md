@@ -41,13 +41,14 @@ Advantages of Rate Limiter :
 
 
 # 1.Token bucket algorithm
+algorithm:
 * mapping each request to one token
 * Handling container of tokens
 * for each request:
 * if there are enough tokens, we take one token out for each request, and the request goes through.
 * if there aren't enough tokens, the request is dropped
 
-Illustrating diagram
+Illustrating diagram:
 
 ![image](https://user-images.githubusercontent.com/59146036/185647213-706ee953-714c-4cc8-92bc-3cae5babee9c.png)
 
@@ -65,6 +66,32 @@ pros and cons:
 * It's hard to tune the token refill rate and the bucket size properly
 
 
+# 2.Leaking bucket algorithm (Queue)
+algorithm:
+* when a request arrived the system checks if the queue is full. if it's full then dropp the request, else add them to the queue.
+* Requests are pulled from the queue and processed at regular intervals
 
+Illustrating diagrams:
+
+![image](https://user-images.githubusercontent.com/59146036/185653233-93e66418-22bc-49fa-ae3b-c0a2afdc3562.png)
+
+
+implementation:
+The leaking bucket algorithm takes two parameters:
+* Bucket size: the queue size
+* Outflow rate: it defines how many requests can be processed at a fixed rate (timeUnit)
+
+
+pros and cons:
+* Pros:
+* the algorithm is easy to implement
+* memory efficient
+* Cons:
+* It's hard to tune the Outflow rate and the bucket size properly
+
+# 3.Fixed window counter algorithm
+
+algorithm:
+* 
 
 
