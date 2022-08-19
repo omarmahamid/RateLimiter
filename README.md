@@ -109,8 +109,10 @@ algorithm:
 * if the log siz is the same or less than the allowed count, a request is accepted, otherwise it is rejected.
 
 
-Illustartion diagram:
+# 5.Sliding window counter algorithm
 
+algorithm:
+combination of algorithm4 and algorithm3
 
 
 
