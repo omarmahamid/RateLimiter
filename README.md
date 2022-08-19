@@ -33,14 +33,14 @@ Advantages of Rate Limiter :
 
 # Algorithms for rate limiter
 
-* Token bucket
-* Leaking bucket
-* Fixed window counter
-* Sliding window log
-* Sliding window counter
+* 1.Token bucket
+* 2.Leaking bucket
+* 3.Fixed window counter
+* 4.Sliding window log
+* 5.Sliding window counter
 
 
-# Token bucket algorithm
+# 1.Token bucket algorithm
 * mapping each request to one token
 * Handling container of tokens
 * for each request:
