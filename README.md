@@ -28,5 +28,19 @@ Advantages of Rate Limiter :
 
 2.Rate Limiter middleware
 
-![image](https://user-images.githubusercontent.com/59146036/185633866-5adfbd71-08b1-485a-a5c4-3ecf073d806a.png)
+![image](https://user-images.githubusercontent.com/59146036/185634585-71ab83ba-0585-42e9-a011-ecd848fff6b9.png)
+
+
+# Algorithms for rate limiter
+
+1.Token bucket
+2.Leaking bucket
+3.Fixed window counter
+4.Sliding window log
+5.Sliding window counter
+
+
+# 1. Token Bucket
+
+
 
