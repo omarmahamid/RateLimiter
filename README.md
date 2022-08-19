@@ -43,10 +43,10 @@ Advantages of Rate Limiter :
 # 1. Token Bucket
 
 algorithm : 
-Handle a bucket container with pre-defined capacity.
-For each token,
-if the container is full 
-then no more tokens are added
+* Handle a bucket container with pre-defined capacity.
+* For each token,
+    *if the container is full 
+    *then no more tokens are added
 
 
 
