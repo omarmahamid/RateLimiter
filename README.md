@@ -40,13 +40,17 @@ Advantages of Rate Limiter :
 * Sliding window counter
 
 
-# 1. Token Bucket
+# Token bucket algorithm
+* mapping each request to one token
+* Handling container of tokens
+* for each request:
+* if there are enough tokens, we take one token out for each request, and the request goes through.
+* if there aren't enough tokens, the request is dropped
 
-algorithm : 
-* Handle a bucket container with pre-defined capacity.
-* For each token,
-    *if the container is full 
-    *then no more tokens are added
+Illustrating diagram
+
+![image](https://user-images.githubusercontent.com/59146036/185647213-706ee953-714c-4cc8-92bc-3cae5babee9c.png)
+
 
 
 
