@@ -11,3 +11,22 @@ for example :
 * You can't got more than 1 driving offence per hour.
 * You can vote 5 times per day from the same IP address.
 
+
+Advantages of Rate Limiter :
+
+* Prevent resource starvation.
+* Reduce cost.
+
+
+
+# Where to put the rate limiter
+
+
+1. At the server side implementation
+
+![image](https://user-images.githubusercontent.com/59146036/185633638-c96407c2-e2f1-4a4d-a73c-ccc621a370b8.png)
+
+2.Rate Limiter middleware
+
+![image](https://user-images.githubusercontent.com/59146036/185633866-5adfbd71-08b1-485a-a5c4-3ecf073d806a.png)
+
