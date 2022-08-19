@@ -52,5 +52,19 @@ Illustrating diagram
 ![image](https://user-images.githubusercontent.com/59146036/185647213-706ee953-714c-4cc8-92bc-3cae5babee9c.png)
 
 
+implementation:
+The token bucket algorithm takes two parameters:
+* Bucket size: the maximum number of tokens allowed in the bucket
+* Refill rate: number of tokens put into the bucket every second(timeUnit)
+
+pros and cons:
+* Pros:
+* the algorithm is easy to implement
+* memory efficient
+* Cons:
+* It's hard to tune the token refill rate and the bucket size properly
+
+
+
 
 
